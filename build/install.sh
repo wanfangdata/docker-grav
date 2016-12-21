@@ -45,10 +45,10 @@ apk --update add \
     php-zip
 
 mkdir -p /setup/grav; cd /setup/grav
-wget https://github.com/getgrav/grav/releases/download/$GRAV_VERSION/grav-admin-v$GRAV_VERSION.zip
+wget https://github.com/getgrav/grav-skeleton-rtfm-site/releases/download/$GRAV_VERSION/grav-skeleton-rtfm-site-v$GRAV_VERSION.zip
 cd /apps/www
-unzip -q /setup/grav/grav-admin-v$GRAV_VERSION.zip
-mv grav-admin grav
+unzip -q /setup/grav/grav-skeleton-rtfm-site-v$GRAV_VERSION.zip
+mv grav-skeleton-rtfm-site grav
 
 # Move any writable directories to have -dist extensions.  See ../startup.d/050-grav-setup.sh for how this
 # works when a container is started
